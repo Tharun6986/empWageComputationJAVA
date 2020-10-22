@@ -49,6 +49,17 @@ public class empWage {
         else
             System.out.println("Employee is absent");
 
+
+        /* UserCase5
+         *  Functionality: Calculating employee wage for month */
+
+        int totalwages = imp.WagesforMonth();
+        if (totalwages == 1600 )
+            System.out.println("Part time Employee wage for a month : "+totalwages);
+        else if(totalwages>1600)
+            System.out.println("Full time Employee wage for a month : "+totalwages);
+        else
+            System.out.println("Employee is absent");
     }
 
 }

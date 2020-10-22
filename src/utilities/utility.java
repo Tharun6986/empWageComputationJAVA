@@ -82,4 +82,34 @@ public class utility {
                 return 0;
         }
     }
+
+    /* UserCase5
+     * Functionality: Logic to calculating employee wages
+                      for a month */
+    public int WagesforMonth(){
+        int NumWorkingDays=20;
+        int wageformonth=0;
+        int empHrs=0;
+        int wages;
+        int empRatePerHr=20;
+        for (int day = 1; day<=NumWorkingDays; day++)
+        {
+            double randomCheck=(int)Math.floor(Math.random()*10)%3;
+            switch ((int) randomCheck)
+            {
+                case 1:
+                    empHrs = 8;
+                    break;
+                case 2:
+                    empHrs = 4;
+                    break;
+                default:
+                    empHrs = 0;
+            }
+            wages=empHrs*empRatePerHr;
+            wageformonth = wageformonth+wages;
+        }
+        return wageformonth;
+    }
+
 }
