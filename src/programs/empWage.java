@@ -1,6 +1,6 @@
 package programs;
 
-import utilities. utility;
+import utilities.utility;
 
 /* Author: Tharun Srikanth Reddy
  * Date: 16-10-2020
@@ -36,7 +36,19 @@ public class empWage {
         else
             System.out.println("Employee is absent");
 
-    }
 
+        /* UserCase4
+         * Functionality: Solving by using Switch Case statement
+         */
+
+        int wages = imp.SwitchCase();
+        if (wages == 80)
+            System.out.println("Part Time employee Wage using switch case is: " + wages);
+        else if (wages > 80)
+            System.out.println("Full Time employee wage using switch case is: " +wages);
+        else
+            System.out.println("Employee is absent");
+
+    }
 
 }

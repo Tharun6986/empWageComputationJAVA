@@ -58,4 +58,28 @@ public class utility {
         else
             return 0;
     }
+
+    /* UserCase4
+     * Functionality: Logic to find Full time wage and
+                      part time wage by using switch case*/
+
+    public int SwitchCase(){
+        int PartTime;
+        int FullTime;
+        int empRatePerHr = 20;
+        int wages;
+        double Check = Math.floor(Math.random() * 10) % 3;
+        switch ( (int) Check) {
+            case 1:
+                FullTime=8;
+                wages=empRatePerHr*FullTime;
+                return wages;
+            case 2:
+                PartTime=4;
+                wages=empRatePerHr*PartTime;
+                return wages;
+            default:
+                return 0;
+        }
+    }
 }
