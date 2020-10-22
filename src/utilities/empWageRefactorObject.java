@@ -11,28 +11,6 @@ public class empWageRefactorObject {
     private int numWorkingDays;
     private int MaxWorkingHrsInMonth;
 
-    public empWageRefactorObject(String company, int empRatePerHr, int numWorkingDays, int maxWorkingHrsInMonth) {
-        this.company = company;
-        this.empRatePerHr = empRatePerHr;
-        this.numWorkingDays = numWorkingDays;
-        this.MaxWorkingHrsInMonth = maxWorkingHrsInMonth;
-    }
-
-    public empWageRefactorObject() {
-
-    }
-
-    @Override
-    public String toString() {
-        return "empWageRefactorObject{" +
-                "company='" + company + '\'' +
-                ", empRatePerHr=" + empRatePerHr +
-                ", numWorkingDays=" + numWorkingDays +
-                ", MaxWorkingHrsInMonth=" + MaxWorkingHrsInMonth +
-                '}';
-    }
-
-
     public String getCompany() {
 
         return company;
