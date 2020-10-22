@@ -60,6 +60,18 @@ public class empWage {
             System.out.println("Full time Employee wage for a month : "+totalwages);
         else
             System.out.println("Employee is absent");
+
+/* UserCase6
+ * Functionality: Logic to calculate employee wage
+                    for a month till the given condition
+                    reached */
+        int totalWages = imp.empWageMaxDaysHours();
+        if (totalWages == 1600 )
+            System.out.println("Part time Employee wage for a month : "+totalWages);
+        else if(totalWages>1600)
+            System.out.println("Full time Employee wage for a month : "+totalWages);
+        else
+            System.out.println("Employee is absent");
     }
 
 }

@@ -111,5 +111,31 @@ public class utility {
         }
         return wageformonth;
     }
+  /* UserCase6
+   * Functionality: Logic to calculate employee wage
+                    for a month till the given condition
+                    reached */
 
+    public  int empWageMaxDaysHours()
+    {
+        int empHrs,WorkingDays=20,totalWage=0;
+        int empRatePerHr=20,totalEmpHrs=0,totalworkingDays=0,MaxHrsInMonth=100;
+
+        while (totalEmpHrs<=MaxHrsInMonth && totalworkingDays<WorkingDays){
+            totalworkingDays++;
+            double randomCheck=(int)Math.floor(Math.random()*10)%3;
+            switch ((int) randomCheck){
+                case 1:
+                    empHrs =8;
+                    break;
+                case 2:
+                    empHrs = 4;
+                    break;
+                default:
+                    empHrs=0;
+            }
+            totalEmpHrs=totalEmpHrs+empHrs;
+        }
+        return totalWage=totalWage+(totalEmpHrs*empRatePerHr);
+    }
 }
